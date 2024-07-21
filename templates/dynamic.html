@@ -1,0 +1,10 @@
+{{ define "title" }}
+<title>{{.Result}}</title>
+<link rel="shortcut icon" href="favicon.ico?id={{.Result}}" />
+{{end}}
+{{define "body"}}
+<div id="container">
+    <h2 id="result" class="{{.Status}}">{{.Result}}</h2>
+    <p id="message">{{.Message}}</p>
+</div>
+{{end}}

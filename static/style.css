@@ -1,0 +1,39 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+footer ul li {
+    display: inline;
+    text-align: center;
+    padding: 2px ;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    flex-flow: column wrap;
+}
+
+#result {
+    font-size: xxx-large;
+}
+#message {
+    font-size: large;
+}
+
+.fail {
+    color:red;
+}
+.pass {
+    color:green;
+}
+.inconclusive {
+    color:blue;
+}
+.pending {
+    color:yellow;
+}

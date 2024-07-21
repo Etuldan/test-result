@@ -1,0 +1,19 @@
+{{define "title"}}
+<title>Test-Result.dev</title>
+{{end}}
+{{define "body"}}
+<h2>Why ?</h2>
+<p>Main usage if for manual and automatic tests when a 3rd party requires a redirect url.</p>
+<p>The goal is to get a decent quick readable (and parseable) result in a lightweight webpage.</p>
+
+<h2>How to use it ?</h2>
+<p>Visit any <a href="/whatever">https://test-result.dev/whatever</a> page to get a "whatever" message diplayed. Yes this is dynamic!</p>
+<p>No needs to check the URL, the message should be big enough !</p>
+<p>Set as final result test the required page. For example</p>
+<ul>
+    <li><a href="/pass">https://test-result.dev/pass</a> to get a PASS result.</li>
+    <li><a href="/fail">https://test-result.dev/fail</a> to get a FAIL result.</li>
+    <li><a href="/inconclusive">https://test-result.dev/inconclusive</a> to get a INCONCLUSIVE result</li>
+</ul>
+<p>If you need to display extra informations, pass them as "msg" querystring, for example <a href="/pending?msg=wait%205%20minutes">https://test-result.dev/pending?msg=wait%205%20minutes</a></p>
+{{end}}
