@@ -83,6 +83,7 @@ func main() {
 	http.HandleFunc("/favicon.ico", faviconHandler)
 
 	http.HandleFunc("/legal.html", staticHandler)
+	http.HandleFunc("/home.html", staticHandler)
 	http.HandleFunc("/style.css", fileHandler)
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
