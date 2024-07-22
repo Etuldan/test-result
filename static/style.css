@@ -25,6 +25,32 @@ footer ul li {
     font-size: large;
 }
 
+a {
+    padding: 2px ;
+    color: grey;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: lightgray
+    }
+    a:hover {
+        background-color: lightgray;
+        color: black;
+    }
+}
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black
+    }
+    a:hover {
+        background-color: grey;
+        color: white;
+    }
+}
+
 .fail {
     color:red;
 }
