@@ -56,7 +56,11 @@ func faviconHandler(w http.ResponseWriter, r *http.Request) {
 	referer = strings.Split(referer[0], "/")
 	icon := strings.ToLower(referer[len(referer)-1])
 	if validPath.MatchString("/" + icon) {
-		http.ServeFile(w, r, fmt.Sprintf("favicon/%s.ico", status[icon]))
+		icon := status[icon]
+		if icon == "" {
+			icon = "default"
+		}
+		http.ServeFile(w, r, fmt.Sprintf("favicon/%s.ico", icon))
 		return
 	}
 	http.Error(w, "Invalid Referer", http.StatusPreconditionFailed)
