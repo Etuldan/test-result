@@ -17,7 +17,7 @@
 ```yml
 services:
     test-result:
-        image: .
+        build: .
         container_name: test-result
         restart: always
         ports:
