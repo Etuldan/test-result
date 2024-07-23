@@ -9,6 +9,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o /test-result
 
 # --
 FROM alpine
+RUN apk add curl
 WORKDIR /app
 COPY --from=builder /test-result /test-result
 COPY static/* /app/static/
