@@ -6,7 +6,7 @@
 
 ## Compiling
 
-`go build -o /test-result`
+`go build -o ./test-result`
 
 ## Building on Docker
 
